@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color:cornflowerblue ;
+}
+#game{
+    width: auto;
+    height: 200px;
+    border: 1px solid blue;
+}
+#character{
+    width: 20px;
+    height: 50px;
+    background-color: blue;
+    position: relative;
+    top: 150px;
+}
+.animate{
+    animation: jump 500ms;
+}
+
+@keyframes jump{
+    0%{top:150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+#block{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: relative;
+    top: 130px;
+    left: 480px;
+    animation: block 1.2s infinite linear;
+}
+@keyframes block{
+    0%{left: 2000px;}
+    100%{left: -40px;}
+}
+#score{
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: 20px;
+    right: 480px;
+    text-align: center;
+}
+#button{
+    width: 500px;
+    height: 210px;
+    background-color: dimgrey;
+}
+#colorchange{
+    width: 600;
+    height: 2000px;
+    color: white;
+    animation: colorchanging 25s infinite;
+}
+@keyframes colorchanging{
+    0% {
+        background-color: white;
+    }
+    20% {
+        background-color:darkgray;
+    }
+    40% {
+        background-color: gray;
+    }
+    60% {
+        background-color: dimgrey;
+    }
+    80% {
+        background-color: black;
+    }
+    100% {
+        background-color: white;
+    }
+             
+}
+
+
